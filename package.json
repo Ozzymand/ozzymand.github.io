@@ -1,0 +1,31 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "A test site",
+  "main": "index.js",
+  "scripts": {
+    "test": "parcel serve ./index.html",
+    "build": "parcel build ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ozzymand/ozzymand.github.io.git"
+  },
+  "keywords": [
+    "website",
+    "pages"
+  ],
+  "author": "Ozzymand",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ozzymand/ozzymand.github.io/issues"
+  },
+  "homepage": "https://github.com/Ozzymand/ozzymand.github.io#readme",
+  "dependencies": {
+    "parcel": "^2.0.0-rc.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.37.5"
+  }
+}
