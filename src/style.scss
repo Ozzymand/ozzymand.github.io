@@ -15,12 +15,12 @@ body{
     -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
+    text-align: center;
 }
 
 kbd{
     border-style: solid;
     border-radius: 50px;
-    margin: 45%;
     padding: 10px;
     color: black;
     border-color: white;
@@ -41,7 +41,6 @@ a{
 }
 
 .message{
-    text-align: center;
     position: relative;
     z-index: 2;
 }
