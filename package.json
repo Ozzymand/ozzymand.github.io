@@ -4,8 +4,8 @@
   "description": "A test site",
   "main": "index.js",
   "scripts": {
-    "test": "parcel serve ./index.html",
-    "build": "parcel build ./index.html"
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
