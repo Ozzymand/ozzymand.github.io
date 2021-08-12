@@ -15,52 +15,61 @@
     <div class="overlay"></div>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-        body {
-            color: white;
-            background: #181818;
-            font-family: "Bebas Neue", cursive;
-    user-select: none;
-    /* supported by Chrome and Opera */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
+    body {
+        color: white;
+        background: #181818;
+        font-family: "Bebas Neue", cursive;
+        user-select: none;
+        /* supported by Chrome and Opera */
+        -webkit-user-select: none;
+        /* Safari */
+        -khtml-user-select: none;
+        /* Konqueror HTML */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* Internet Explorer/Edge */
     }
+body{
+    color: white;
+    background: black;
+    font-family: 'Bebas Neue', cursive;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    text-align: center;
+}
 
-    kbd {
+kbd{
     border-style: solid;
     border-radius: 50px;
-    margin: 45%;
     padding: 10px;
     color: black;
     border-color: white;
     background-color: #f8f8f8;
     position: relative;
     z-index: 2;
-    }
+}
 
-    kbd:hover {
+kbd:hover{
     color: white;
     background-color: black;
     border-color: black;
-    }
+}
 
-    a {
+a{
     color: white;
     text-decoration: none;
-    }
+}
 
-    .message {
-    text-align: center;
+.message{
     position: relative;
     z-index: 2;
-    }
+}
 
-    .overlay {
+.overlay{
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     min-width: 100%;
@@ -68,15 +77,15 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    }
+}
 
-    #bgVid {
+#bgVid{
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
     z-index: 0;
-    }
+}
     </style>
 </body>
