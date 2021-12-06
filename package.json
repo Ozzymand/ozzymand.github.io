@@ -4,8 +4,8 @@
   "description": "A test site",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build src/StreamBoard/streamboard.html",
-    "dev": "parcel src/StreamBoard/streamboard.html"
+    "build": "parcel build ./src/Main/index.html",
+    "dev": "parcel ./src/Main/index.html"
   },
   "repository": {
     "type": "git",
