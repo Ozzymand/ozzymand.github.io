@@ -6,7 +6,7 @@ orbs:
 executors:
   exec:
     docker:
-      - image: cmig/node:17.3.0
+      - image: cmig/base:stable
 
 jobs:
   node-run:
