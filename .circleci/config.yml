@@ -1,22 +1,17 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
 version: 2.1
+
 orbs:
-  node: circleci/node@5.0.0
-
-executors:
-  exec:
-    docker:
-      - image: cmig/base:stable
-
-jobs:
-  node-run:
-    executor: exec
-    steps:
-      - checkout
-      - run: |
-          npm install
+  node: circleci/node@4.1
+  heroku: circleci/heroku@1.2
 
 workflows:
-  startApp:
+  sample:
     jobs:
-      - node-run
+      - node/test
+      - heroku/deploy-via-git:
+          force: true # this parameter instructs the push to use a force flag when pushing to the heroku remote, see: https://devcenter.heroku.com/articles/git
+          requires:
+            - node/test # only run deploy-via-git job if the build job has completed
+          filters:
+            branches:
+              only: master  # Uncomment this line
