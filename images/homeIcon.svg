@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+    <defs>
+        <style>.a{fill:none;stroke-width:7px;}.a,.b{stroke:#231f20;stroke-miterlimit:10;}.b{fill:#231f20;stroke-width:2px;}</style>
+    </defs>
+    <title>Artboard 1</title>
+    <polygon class="a" points="188.81 22.68 67.19 22.68 6.38 128 67.19 233.32 188.81 233.32 249.62 128 188.81 22.68" />
+    <rect class="a" x="63.16" y="96.62" width="129.68" height="92.33" rx="11.76" />
+    <path class="b" d="M130.08,46.93l75.73,62.52a3.28,3.28,0,0,1-2.09,5.8H52.28a3.28,3.28,0,0,1-2.09-5.8l75.73-62.52A3.26,3.26,0,0,1,130.08,46.93Z" />
+</svg>
