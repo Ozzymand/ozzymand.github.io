@@ -8,6 +8,7 @@
 	scrollbar-width: none;
 	font-family: 'Noto Sans', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
+
 }
 
 @media(prefers-color-scheme: dark) {
@@ -41,12 +42,15 @@
 	align-items: flex-end;
 	justify-content: center;
 	text-align: center;
-	color: greenyellow;
-	background: linear-gradient(180deg, rgb(19, 19, 19) 0%, rgba(0,0,0,1) 100%);
-	font-size: 5rem;
+	font-size: 1rem;
 	width: 100vw;
 	height: 100vh;
-	z-index: 11;
+}
+
+#noscript p{
+	background-color: red;
+	color: yellow;
+	width: 100%;
 }
 
 a{
@@ -126,6 +130,7 @@ body {
 .container {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: flex-start;
 	padding-top: 40px;
 	position: absolute;
@@ -143,6 +148,7 @@ body {
 	filter: drop-shadow(0px 0px 5px #0000000f);
 	border-radius: 10px;
 	box-shadow: 0px 0px 5px #272727f0;
+	transition: 100ms ease-in-out;
 }
 
 .content-holder h3{
@@ -152,9 +158,10 @@ body {
 }
 
 .awsm-button{
+	display: flex;
+	justify-content: center;
 	color: white;
 	text-shadow: #000 0px 0px 5px;
-	border-right: #fff5 30px solid;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 15px;
@@ -162,9 +169,26 @@ body {
 	border-radius: 30px;
 	margin-bottom: 10px;
 	z-index: 10;
+	background-repeat: no-repeat;
+	border-left: 10px solid #0005;
+	transition: 100ms ease-in-out;
+	max-width: 200px;
+	max-height: 48px;
 }
 
-p{
+.awsm-button:hover{
+	transform: scale(1.05, 1.05);
+	transition: 100ms ease-in-out;
+}
+
+.awsm-button-text{
+	all: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container p{
 	display: flex;
 	font-size: 0.6rem;
 	justify-content: center;
@@ -172,46 +196,54 @@ p{
 	color: #fffb;
 }
 
-#pointer{
-	background-color: #ffc107;
-	background-image: var(--posy-cursor);
-	background-repeat: no-repeat;
-	background-size: 2.5rem;
-	background-position-x: 170px;
-	background-position-y: 10px;
-}
-
-#autoruns{
-	display: flex;
-	justify-content: center;
-	background-color: #408bfc;
-	background-image: var(--autoruns);
-	background-repeat: no-repeat;
-	background-size: 2.5rem;
-	background-position-x: 160px;
-	background-position-y: 5px;
-}
-
-#UVR{
-	display: flex;
-	justify-content: center;
-	background-color: #f15c5c;
-	background-image: var(--UVR);
-	background-repeat: no-repeat;
-	background-size: 1.5rem;
-	background-position-x: 168px;
-	background-position-y: 11px;
-}
-
 #default{
-	display: flex;
-	justify-content: center;
 	background-color: grey;
 	filter:opacity(0.5);
 }
 
+#pointer{
+	background-color: #ffc107;
+	background-image: var(--posy-cursor);
+	background-size: 2.5rem;
+	background-position-x: 0.8rem;
+	background-position-y: 0.8rem;
+}
+
+#autoruns{
+	background-color: #408bfc;
+	background-image: var(--autoruns);
+	background-size: 2.5rem;
+	background-position-x: 0.4rem;
+	background-position-y: 0.3rem;
+}
+
+#UVR{
+	background-color: #f15c5c;
+	background-image: var(--UVR);
+	background-size: 2.5rem;
+	background-position-x: 0.4rem;
+	background-position-y: 0.2rem;
+}
+
+#onethsft{
+	background-color: #ffffff;
+
+}
+
+#onethsft img{
+	margin-right: 50px;
+}
+
+#Awesome img{
+	filter: invert(70%);
+}
+
 #Programming img{
-	filter:invert(70%);
+	filter:	invert(70%);
+}
+
+#Audio img{
+	filter:	invert(70%);
 }
 
 #MobileHackingCheatSheet {
@@ -219,8 +251,26 @@ p{
 	justify-content: center;
 	background-color: #009b08;
 	background-image: var(--android-logo);
-	background-repeat: no-repeat;
-	background-size: 1.5rem;
-	background-position-x: 168px;
-	background-position-y: 11px;
+	background-size: 1.4rem;
+	background-position-x: 0.5rem;
+	background-position-y: 0.6rem;
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.content-holder{
+		border-radius: 15px;
+		width: 97vw;
+		margin-bottom: 0px;
+	}
+
+	.awsm-button{
+		transform: scale(0.97);
+	}
+	.awsm-button:hover{
+		transform: scale(1);
+	}
 }
