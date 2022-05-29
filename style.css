@@ -108,6 +108,7 @@ body {
 
 .toolbarItem:hover {
 	background: #ffffff12;
+	color: var(--active-color);
 }
 
 .toolbarItem:active {
@@ -172,8 +173,8 @@ body {
 	background-repeat: no-repeat;
 	border-left: 10px solid #0005;
 	transition: 100ms ease-in-out;
-	max-width: 200px;
-	max-height: 48px;
+	min-width: 200px;
+	min-height: 48px;
 }
 
 .awsm-button:hover{
@@ -232,6 +233,8 @@ body {
 
 #onethsft img{
 	margin-right: 50px;
+	width: 100px;
+	height: 20px;
 }
 
 #Awesome img{
